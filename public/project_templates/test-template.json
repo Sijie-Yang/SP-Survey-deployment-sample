@@ -1,0 +1,52 @@
+{
+  "id": "test-template",
+  "name": "Test Template",
+  "description": "A test template to verify dynamic loading functionality",
+  "author": "System Test",
+  "year": "2024",
+  "category": "Test",
+  "tags": ["test", "dynamic", "verification"],
+  "createdAt": "2024-10-14T17:30:00.000Z",
+  "config": {
+    "title": "Test Survey Template",
+    "description": "This is a test survey to verify that templates are loaded dynamically from the file system.",
+    "logo": "",
+    "logoPosition": "right",
+    "settings": {
+      "showQuestionNumbers": "on",
+      "showProgressBar": "top",
+      "progressBarType": "questions",
+      "autoGrowComment": true,
+      "showPreviewBeforeComplete": "noPreview"
+    },
+    "images": [],
+    "pages": [
+      {
+        "name": "test_page",
+        "title": "Test Questions",
+        "description": "This is a test page to verify template functionality.",
+        "elements": [
+          {
+            "type": "text",
+            "name": "test_question",
+            "title": "What do you think about this dynamic template loading?",
+            "isRequired": false,
+            "placeholder": "Enter your thoughts here..."
+          },
+          {
+            "type": "radiogroup",
+            "name": "rating",
+            "title": "How would you rate this feature?",
+            "isRequired": true,
+            "choices": [
+              { "value": "excellent", "text": "Excellent" },
+              { "value": "good", "text": "Good" },
+              { "value": "average", "text": "Average" },
+              { "value": "poor", "text": "Poor" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

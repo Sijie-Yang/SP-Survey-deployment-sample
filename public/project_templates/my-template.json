@@ -1,0 +1,45 @@
+{
+  "id": "my-template",
+  "name": "My Custom Template",
+  "description": "A custom template created without index file",
+  "author": "User",
+  "year": "2024",
+  "category": "Custom",
+  "tags": ["custom", "no-index", "auto-discovery"],
+  "createdAt": "2024-10-14T17:35:00.000Z",
+  "config": {
+    "title": "My Custom Survey",
+    "description": "This template was automatically discovered without an index file!",
+    "logo": "",
+    "logoPosition": "left",
+    "settings": {
+      "showQuestionNumbers": "off",
+      "showProgressBar": "bottom",
+      "progressBarType": "pages",
+      "autoGrowComment": true,
+      "showPreviewBeforeComplete": "showAllQuestions"
+    },
+    "images": [],
+    "pages": [
+      {
+        "name": "discovery_test",
+        "title": "Auto-Discovery Test",
+        "description": "This page tests automatic template discovery.",
+        "elements": [
+          {
+            "type": "boolean",
+            "name": "auto_discovery_works",
+            "title": "Did this template appear automatically in the panel?",
+            "isRequired": true
+          },
+          {
+            "type": "comment",
+            "name": "feedback",
+            "title": "Any feedback about the auto-discovery feature?",
+            "isRequired": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "basic-survey",
+  "name": "Basic Survey Template",
+  "description": "A simple, general-purpose survey template",
+  "author": "System",
+  "year": "2024",
+  "category": "General",
+  "tags": ["basic", "general", "starter"],
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "config": {
+    "title": "Basic Survey Template",
+    "description": "A simple survey template to get you started.",
+    "logo": "",
+    "logoPosition": "right",
+    "settings": {
+      "showQuestionNumbers": "on",
+      "showProgressBar": "bottom",
+      "progressBarType": "questions",
+      "autoGrowComment": true,
+      "showPreviewBeforeComplete": "noPreview"
+    },
+    "images": [],
+    "pages": [
+      {
+        "name": "page1",
+        "title": "Survey Questions",
+        "description": "Please answer the following questions.",
+        "elements": [
+          {
+            "type": "text",
+            "name": "name",
+            "title": "What is your name?",
+            "isRequired": false
+          },
+          {
+            "type": "radiogroup",
+            "name": "satisfaction",
+            "title": "How satisfied are you?",
+            "isRequired": true,
+            "choices": [
+              { "value": "very_satisfied", "text": "Very Satisfied" },
+              { "value": "satisfied", "text": "Satisfied" },
+              { "value": "neutral", "text": "Neutral" },
+              { "value": "dissatisfied", "text": "Dissatisfied" },
+              { "value": "very_dissatisfied", "text": "Very Dissatisfied" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
